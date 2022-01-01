@@ -225,6 +225,12 @@ async def echo(bot, update):
                             "] ( " +
                             approx_file_size + " )",
                             callback_data=(cb_string_video).encode("UTF-8")
+                        ),
+                        InlineKeyboardButton(
+                            "DFile [" +
+                            "] ( " +
+                            approx_file_size + " )",
+                            callback_data=(cb_string_file).encode("UTF-8")
                         )
                     ]
                 inline_keyboard.append(ikeyboard)
